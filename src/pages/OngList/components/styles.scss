@@ -1,0 +1,33 @@
+.ongItem {
+	margin: 1.3em 0;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+    justify-content: space-between;
+    
+    div {
+        color: var(--color-gray);
+        align-self: center;
+
+        img {
+            width: 30%;
+            border-radius: 50%;
+        }
+
+        &:first-child {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            b {
+                color: var(--color-black);
+            }
+
+            span {
+                color: var(--color-purple);
+            
+                font-weight: bold;
+            }
+        }
+    }
+}

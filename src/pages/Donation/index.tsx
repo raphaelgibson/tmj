@@ -6,16 +6,16 @@ import './styles.scss'
 export default() => {
 	return(
         <main className="homepage">
-            <div className="sec-1">
+            <div className="ong">
                 <h1>Conheça instituições que tem tudo a ver com você</h1>
                 <button type="button" className="purple-button">
-                    <Link to="/signup">explorar</Link>
+                    <Link to="">explorar</Link>
                 </button>
             </div>
             
-            <section className="sec-2">
+            <div className="ongValues">
                 <div className="triangle"></div>
-            </section>
+            </div>
         </main>
 	)
 }
