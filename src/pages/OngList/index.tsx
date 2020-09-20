@@ -1,4 +1,5 @@
 import React from 'react';
+import { MdCheck } from 'react-icons/md';
 
 import OngItem, { OngItemProps } from './components/OngItem';
 
@@ -23,11 +24,11 @@ export default() => {
 
 	return(
 		<div className="ongList" >
-			<h1> Escolha um de nossos projetos </h1>
+			<h1> ONGs melhores pontuadas </h1>
 
 			<section className="headerTable" >
 
-				<h5> ONGs melhores pontuadas </h5>
+				<h5> <MdCheck /> Acreditamos que essas instituições tem tudo a ver com você </h5>
 
 				<div className="title">
 					<span> Na categoria escolhida </span>
