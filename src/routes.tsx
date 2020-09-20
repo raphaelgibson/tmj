@@ -15,8 +15,7 @@ const App = () => {
 	return (
 		<BrowserRouter>
   		<Header />
-			<Switch>	
-				<Route path='/' exact component={ Homepage } />
+			<Switch>
 				<Route path='/ongs' exact component={ OngList } />
 				<Route path='/ong' component={ OngDetail } />
 				<Route path='/register' component={ Register } />
