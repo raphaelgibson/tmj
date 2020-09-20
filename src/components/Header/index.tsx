@@ -1,9 +1,9 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react'
+import { Link } from 'react-router-dom'
 
-import Logo from '../../assets/Ativo 1.svg';
+import Logo from '../../assets/Ativo 1.svg'
 
-import './styles.css';
+import './styles.scss'
 
 export default() => {
 	return(
@@ -16,5 +16,5 @@ export default() => {
 				<Link to="" > Cadastre-se </Link>
 			</div>
 		</div>
-	);
+	)
 }

@@ -1,11 +1,11 @@
-import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import React from 'react'
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
-import Header from './components/Header/';
-import OngList from './components/OngList/';
-import OngDetail from './components/OngDetail/';
+import Header from './components/Header/'
+import OngList from './components/OngList/'
+import OngDetail from './components/OngDetail/'
 
-import './index.css';
+import './index.css'
 
 const App = () => {
 	return (
@@ -18,7 +18,7 @@ const App = () => {
 
 			</Switch>
 		</BrowserRouter>
-	);
+	)
 }
 
-export default App;
+export default App

@@ -1,16 +1,16 @@
-import React from 'react';
+import React from 'react'
 
-import './styles.css';
+import './styles.css'
 
 export interface OngItemProps {
-	id: number;
-	ongName: string;
-	points: number;
-	description: string;
+	id: number
+	ongName: string
+	points: number
+	description: string
 }
 
 interface Props {
-  ong: OngItemProps;
+  ong: OngItemProps
   count: number
 }
 
@@ -30,7 +30,7 @@ const OngItem: React.FC<Props> = ({ ong, count }) => {
 			<div> { ong.points } </div>
 
 		</div>
-	);
+	)
 }
 
-export default OngItem;
+export default OngItem

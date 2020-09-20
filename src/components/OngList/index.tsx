@@ -1,11 +1,11 @@
-import React from 'react';
+import React from 'react'
 
-import OngItem, { OngItemProps } from './components/OngItem';
+import OngItem, { OngItemProps } from './components/OngItem'
 
-import './styles.css';
+import './styles.scss'
 
 export default() => {
-	var count = 0;
+	var count = 0
 	const ongs = 
 	[
 		{id: 0, ongName: "ONG X", points: 500, description: "Breve descrição"},
@@ -37,7 +37,7 @@ export default() => {
 
 			<div className="items" >
 				{ongs.map((ong: OngItemProps) => {
-					count++;
+					count++
 					return <OngItem key={ ong.id } ong={ ong } count={ count }/>
 				})}
 			</div>
@@ -45,5 +45,5 @@ export default() => {
 			</section>
 
 		</div>
-	);
+	)
 }
