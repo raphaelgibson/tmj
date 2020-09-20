@@ -31,6 +31,11 @@
     height: 40px;
     margin: 10px;
 
+    a {
+        text-decoration: none;
+        color: #FFFFFF;
+    }
+
     &:focus {
         outline: none;
     }
@@ -47,6 +52,11 @@
     width: 136px;
     height: 40px;
     margin: 10px;
+
+    a {
+        text-decoration: none;
+        color: #6E2892;
+    }
 
     &:focus {
         outline: none;
