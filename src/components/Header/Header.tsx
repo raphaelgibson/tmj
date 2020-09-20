@@ -14,7 +14,7 @@ export const Header = () => {
                 <button type="button" className="signin">
                     <Link to="">login</Link>
                 </button>
-                <button type="button" className="signup">
+                <button type="button" className="purple-button">
                     <Link to="">cadastre-se</Link>
                 </button>
             </section>
