@@ -2,10 +2,11 @@ import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 import { Header } from './components/Header/Header'
-import OngList from './components/OngList/'
-import OngDetail from './components/OngDetail/'
+import Homepage from './pages/Homepage/'
+import OngList from './pages/OngList/'
+import OngDetail from './pages/OngDetail/'
 
-import './index.css'
+import './index.scss'
 
 const App = () => {
 	return (
@@ -13,8 +14,9 @@ const App = () => {
   		<Header />
 			<Switch>
 				
-				<Route path='/' exact component={ OngList } />
-				<Route path='/details' component={ OngDetail } />
+				<Route path='/' exact component={ Homepage } />
+				<Route path='/ongs' exact component={ OngList } />
+				<Route path='/ong' component={ OngDetail } />
 
 			</Switch>
 		</BrowserRouter>
