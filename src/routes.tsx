@@ -6,6 +6,7 @@ import Homepage from './pages/Homepage/'
 import OngList from './pages/OngList/'
 import OngDetail from './pages/OngDetail/'
 import Register from './pages/Register/'
+import Login from './pages/Login/'
 
 import './index.scss'
 
@@ -19,6 +20,7 @@ const App = () => {
 				<Route path='/ongs' exact component={ OngList } />
 				<Route path='/ong' component={ OngDetail } />
 				<Route path='/register' component={ Register } />
+				<Route path='/login' component={ Login } />
 
 			</Switch>
 		</BrowserRouter>

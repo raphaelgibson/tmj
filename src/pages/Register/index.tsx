@@ -1,27 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import './styles.scss';
 
 export default() => {
-	const [checked, setChecked] = useState(true);
-	const [iAm, setIam] = useState({who: 'none', status: checked});
-
-	const handleChange = ({ target }: any) => {
-		const { name } = target;
-		setChecked(!checked)
-		if (checked) {
-			setIam({who: name, status: checked})
-		} else {
-			setIam({who: 'none', status: checked});
-		}
-	}
-
-	useEffect(() => {
-		if (iAm.status) {
-			console.log(iAm);
-		}
-	})
+	const [checked, setChecked] = useState(false);
 
 	return(
 		<div className="register">
@@ -62,28 +45,31 @@ export default() => {
 					/>
 				</div>
 
-				<div className="checkbox">
+
+				<div className="iAm" >
+						
 					<div>
-						<input 
-							type="checkbox" 
-							name="ong" 
-							id="ong"
-							onChange={handleChange}
-						/>
-						<label htmlFor="ong"> Sou uma ONG </label>
+				  	<input 
+				  		type="radio"
+				  		id="ong" 
+				  		name="gender"
+				  		onChange={() => setChecked(!checked)}
+				  	/>
+				  	<label htmlFor="ong">Sou uma ONG</label><br />
 					</div>
 					<div>
-						<input 
-							type="checkbox" 
-							name="helper" 
-							id="helper"
-							onChange={handleChange}
-						/>
-						<label htmlFor="helper"> Quero ajudar </label>
+				  	<input 
+				  		type="radio" 
+				  		id="helper" 
+				  		name="gender"
+				  		onChange={() => setChecked(!checked)}
+				  	/>
+				  	<label htmlFor="helper">Quero Ajudar</label>
 					</div>
+
 				</div>
 
-				{ iAm && iAm.who === "ong" ?
+				{ checked ?
 					<div id="cause">
 						<label htmlFor="cause" > Selecione sua casa </label>
 						<select name="cause" id="cause">
