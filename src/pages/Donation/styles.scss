@@ -1,0 +1,35 @@
+.donation {
+    width: 26%;
+	height: 100vh;
+	margin: auto;
+	display: flex;
+    flex-direction: column;
+
+    form {
+        .input-block {
+            margin: 1.5em 0;
+            color: var(--color-gray);
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            input {
+                padding: .7em 1em;
+                margin-top: .5em;
+                opacity: .6;
+                border: .13em solid var(--color-gray);
+                border-radius: .3em;
+
+                &:focus {
+                    border: .13em solid var(--color-purple);
+                }
+            }
+
+            label {
+                font-weight: bold;
+                color: var(--color-purple);
+                font-size: .875rem;
+            }
+        }
+    }
+}
