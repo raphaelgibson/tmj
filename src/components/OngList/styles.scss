@@ -1,0 +1,45 @@
+.ongList {
+	width: 80%;
+
+	margin: auto;
+
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+    
+    h1 {
+        font-weight: bold;
+        font-size: 48px;
+        color: var(--color-black);
+    
+        margin: .7em 0;
+    }
+
+    .headerTable {
+        width: 60%;
+
+        h5 {
+            font-weight: normal;
+            font-size: 20px;
+        
+            color: var(--color-purple);
+        }
+
+        .title {
+            margin: .5em 0;
+        
+            width: 100%;
+        
+            display: flex;
+            justify-content: space-between;
+
+            span {
+                margin-top: .5em;
+                margin-bottom: 1em;
+            
+                font-weight: normal;
+                font-size: 14px;
+            }
+        }
+    }
+}
