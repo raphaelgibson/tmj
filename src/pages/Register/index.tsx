@@ -51,7 +51,7 @@ export default() => {
 				  		type="radio"
 				  		id="ong" 
 				  		name="gender"
-				  		onChange={() => setChecked(!checked)}
+							onChange={() => setChecked(!checked)}
 				  	/>
 				  	<label htmlFor="ong">Sou uma ONG</label><br />
 					</div>
@@ -60,7 +60,9 @@ export default() => {
 				  		type="radio" 
 				  		id="helper" 
 				  		name="gender"
-				  		onChange={() => setChecked(!checked)}
+				  		onChange={() => {
+				  			if(checked) {setChecked(false)}
+				  		}}
 				  	/>
 				  	<label htmlFor="helper">Quero Ajudar</label>
 					</div>

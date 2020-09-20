@@ -54,7 +54,7 @@ export default() => {
 
 			</form>
 
-			<span id="login" > Não tem uma conta? <Link to="/login" >Cadastre-se</Link> </span>
+			<span id="login" > Não tem uma conta? <Link to="/register" >Cadastre-se</Link> </span>
 			<Link to="/login" >Esqueceu a senha?</Link>
 
 		</div>
