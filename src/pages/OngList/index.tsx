@@ -1,4 +1,5 @@
 import React from 'react';
+import { MdCheck } from 'react-icons/md';
 
 import OngItem, { IOngItemProps } from './components/OngItem'
 
@@ -26,7 +27,7 @@ export default() => {
 			<h1> ONGs melhores pontuadas </h1>
 
 			<section className="headerTable" >
-				<h5> Acreditamos que essas instituições tem tudo a ver com você </h5>
+				<h5> <MdCheck /> Acreditamos que essas instituições tem tudo a ver com você </h5>
 
 				<div className="title">
 					<div> Na categoria escolhida </div>

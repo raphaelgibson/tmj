@@ -12,10 +12,10 @@ export const Header = () => {
             <section className="sec-2"></section>
             <section className="sec-3">
                 <button type="button" className="signin">
-                    <Link to="/signin">login</Link>
+                    <Link to="/login">login</Link>
                 </button>
                 <button type="button" className="purple-button">
-                    <Link to="/signup">cadastre-se</Link>
+                    <Link to="/register">cadastre-se</Link>
                 </button>
             </section>
         </nav>
