@@ -1,13 +1,20 @@
 .ongItem {
-	margin: 1.3em 0;
+	margin: 1em 0;
 
 	width: 100%;
 
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-}
+	align-items: center;
 
+	transition: .2s all;
+
+	padding: .5em;
+}
+.ongItem:hover {
+	background: rgba(0,0,0,.1);
+}
 .ongItem div:first-child {
 	display: flex;
 	align-items: center;
@@ -18,8 +25,10 @@
 .ongItem div:first-child > b {
 	color: var(--color-black);
 }
-.ongItem div:first-child > span {
+.ongItem div:first-child > a {
 	color: var(--color-purple);
+
+	text-decoration: none;
 
 	font-weight: bold;
 }
