@@ -1,33 +1,43 @@
 .ongItem {
-	margin: 1.3em 0;
+	margin: 1em 0;
+
 	width: 100%;
+
 	display: flex;
 	flex-direction: row;
-    justify-content: space-between;
-    
-    div {
-        color: var(--color-gray);
-        align-self: center;
+	justify-content: space-between;
+	align-items: center;
 
-        img {
-            width: 30%;
-            border-radius: 50%;
-        }
+	transition: .2s all;
 
-        &:first-child {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+	padding: .5em;
+}
+.ongItem:hover {
+	background: rgba(0,0,0,.1);
+}
+.ongItem div:first-child {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 
-            b {
-                color: var(--color-black);
-            }
+	width: 25%;
+}
+.ongItem div:first-child > b {
+	color: var(--color-black);
+}
+.ongItem div:first-child > a {
+	color: var(--color-purple);
 
-            span {
-                color: var(--color-purple);
-            
-                font-weight: bold;
-            }
-        }
-    }
+	text-decoration: none;
+
+	font-weight: bold;
+}
+.ongItem div > img {
+	width: 30%;
+
+	border-radius: 50%;
+}
+
+.ongItem div {
+	color: var(--color-gray);
 }

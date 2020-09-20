@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 import './styles.scss'
 
@@ -21,14 +22,14 @@ const OngItem = ({ ong, count }: IProps) => {
 			<div>
 				<b> { count } </b>
 				<img src="https://github.com/pedr0aroucha.png" alt="ongImage" />
-				<span> { ong.ongName } </span>
+				<Link to="/ong" > { ong.ongName } </Link>
 			</div>
 
 			<div> { ong.description } </div>
 
 			<div> { ong.points } </div>
 		</div>
-	)
+	);
 }
 
 export default OngItem

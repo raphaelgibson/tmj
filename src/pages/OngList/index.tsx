@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 
 import OngItem, { IOngItemProps } from './components/OngItem'
 
-import './styles.scss'
+import './styles.scss';
 
 export default() => {
-	var count = 0
+	var count = 0;
 	const ongs = 
 	[
 		{id: 0, ongName: "ONG X", points: 500, description: "Breve descrição"},
