@@ -9,7 +9,7 @@ export default() => {
             <div className="sec-1">
                 <h1>Conheça instituições que tem tudo a ver com você</h1>
                 <button type="button" className="purple-button">
-                    <Link to="/signup">explorar</Link>
+                    <Link to="/register">explorar</Link>
                 </button>
             </div>
             
