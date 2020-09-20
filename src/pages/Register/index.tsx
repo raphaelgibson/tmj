@@ -1,20 +1,18 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
-import './styles.scss';
+import './styles.scss'
 
 export default() => {
-	const [checked, setChecked] = useState(false);
+	const [checked, setChecked] = useState(false)
 
 	return(
 		<div className="register">
-				
 			<h1> Cadastro </h1>
 
 			<span> É um pequeno passo para você, um gigante para nossa causa! </span>
 
 			<form>
-				
 				<div className="input-block">
 					<label htmlFor="email"> Seu e-mail </label>
 					<input 
@@ -79,11 +77,9 @@ export default() => {
 					: <></> }
 
 				<button> Cadastre-se </button>
-
 			</form>
 
 			<span id="login" > Já tem uma conta? <Link to="/login" >Log-in</Link> </span>
-
 		</div>
-	);
+	)
 }

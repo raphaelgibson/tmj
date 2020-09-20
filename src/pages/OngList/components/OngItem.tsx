@@ -1,25 +1,24 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import './styles.scss';
+import './styles.scss'
 
-export interface OngItemProps {
-	id: number;
-	ongName: string;
-	points: number;
-	description: string;
+export interface IOngItemProps {
+	id: number
+	ongName: string
+	points: number
+	description: string
 }
 
-interface Props {
-  ong: OngItemProps;
+interface IProps {
+  ong: IOngItemProps
   count: number
 }
 
 
-const OngItem: React.FC<Props> = ({ ong, count }) => {
+const OngItem = ({ ong, count }: IProps) => {
 	return(
 		<div className="ongItem" >
-			
 			<div>
 				<b> { count } </b>
 				<img src="https://github.com/pedr0aroucha.png" alt="ongImage" />
@@ -29,9 +28,8 @@ const OngItem: React.FC<Props> = ({ ong, count }) => {
 			<div> { ong.description } </div>
 
 			<div> { ong.points } </div>
-
 		</div>
 	);
 }
 
-export default OngItem;
+export default OngItem
