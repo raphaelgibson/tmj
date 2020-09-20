@@ -3,11 +3,12 @@ import React from 'react'
 import './styles.scss'
 
 export default() => {
-	return(
+	return (
         <main className="donation">
+            <h1>Doar para ONG X</h1>
+            <span>Escolha o método de pagamento a seguir</span>
+
             <section>
-                <h1>Doar para ONG X</h1>
-                <h3>Escolha o método de pagamento a seguir</h3>
                 <div>cartão</div>
                 <div>paypal</div>
             </section>
