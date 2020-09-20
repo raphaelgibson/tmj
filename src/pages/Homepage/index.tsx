@@ -14,7 +14,6 @@ export default() => {
             </div>
             
             <section className="sec-2">
-                <div className="triangle"></div>
             </section>
         </main>
 	)

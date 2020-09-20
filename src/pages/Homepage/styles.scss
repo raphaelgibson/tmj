@@ -60,20 +60,10 @@
     }
 
     .sec-2 {
-        width: 100%;
-        border: 1px solid #707070;
+        background: url('./landing-page-tmj.png') no-repeat center;
+        background-size: contain;
+        width: 150%;
         display: flex;
         justify-content: center;
-
-        .triangle {
-            display: flex;
-            width: 50px; 
-            height: 50px;
-            align-self: center;
-            border: 1px solid #707070;
-            transform: rotate(45deg);
-            border-left: 0;
-            border-bottom: 0;
-        }
     }
 }
