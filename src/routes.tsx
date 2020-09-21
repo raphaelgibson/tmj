@@ -9,6 +9,7 @@ import Register from './pages/Register/'
 import Login from './pages/Login/'
 import Donation from './pages/Donation/'
 import PostAPI from './pages/PostAPI/'
+import PostViaAPI from './pages/PostViaAPI/'
 import TimeLine from './pages/TimeLine/'
 
 import './index.scss'
@@ -24,6 +25,7 @@ const App = () => {
 				<Route path='/login' component={ Login } />
 				<Route path='/donation' component={ Donation } />
 				<Route path='/postapi' component={ PostAPI } />
+				<Route path='/postviaapi' component={ PostViaAPI } />
 				<Route path='/timeline' component={ TimeLine } />
 				<Route path='*' component={ Homepage } />
 			</Switch>
