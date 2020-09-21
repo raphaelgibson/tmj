@@ -1,4 +1,4 @@
-.postApi {
+.ongChange {
 	width: 55%;
 	height: 100vh;
 
@@ -46,7 +46,7 @@
 			}
 		}
 
-		a {
+		.editing {
 			padding: .7em .8em;
 
 			color: var(--color-blue);
@@ -69,7 +69,7 @@
 	input {
 		border-radius: .3em;
 		opacity: .5;
-		border: .13em solid var(--color-gray);
+		border: 2px solid var(--color-gray);
 
 		padding: .5em;
 	}
@@ -77,9 +77,9 @@
 	textarea {
 		border-radius: .3em;
 		opacity: .5;
-		border: .13em solid var(--color-gray);
-
-		padding: 1em;
+		border: 2px solid var(--color-gray);
+        padding: 1em;
+        min-height: 20vh;
 	}
 
 	.buttonContainer {

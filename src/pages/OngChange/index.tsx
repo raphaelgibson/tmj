@@ -5,7 +5,7 @@ import './styles.scss';
 
 export default() => {
 	return(
-		<div className="postApi" >
+		<div className="ongChange" >
 			<header>
 
 				<div>
@@ -17,7 +17,7 @@ export default() => {
 
 				</div>
 				
-				<Link to="" > EDITANDO </Link>
+				<div className="editing"> EDITANDO </div>
 
 			</header>
 

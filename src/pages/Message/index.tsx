@@ -1,7 +1,10 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react'
+import { Link } from 'react-router-dom'
 
-import './styles.scss';
+import Swal from 'sweetalert2'
+import api from '../../services/api'
+
+import './styles.scss'
 
 export interface OngItemProps {
 	id: number;
@@ -13,19 +16,17 @@ const OngItem: React.FC<OngItemProps> = ({ ongName, points }) => {
 	return (
 		<div className="ongItem" >
 			<div>
-			
 				<b> 1 </b>
 				<img src="https://github.com/pedr0aroucha.png" alt="ongImage" />
 				<Link to="/ong" > ONG X </Link>
 			</div>
 
 			<div> 500 </div>
-
 		</div>
 	);
 }
 
-export default() => {
+export default () => {
 	const ongs = 
 	[
 		{id: 0, ongName: "ONG X", points: 500},
@@ -39,15 +40,12 @@ export default() => {
 		{id: 8, ongName: "ONG X", points: 500},
 		{id: 9, ongName: "ONG X", points: 500},
 		{id: 10, ongName: "ONG X", points: 500},
-	];
+	]
 
 	return(
 		<div className="postViaAPI" >
-			
 			<div className="content">
-					
 				<header>
-
 					<div>
 						<img src="https://github.com/pedr0aroucha.png" alt="Logo" />
 						<div>
@@ -57,8 +55,7 @@ export default() => {
 
 					</div>
 					
-					<Link to="" > EDITANDO </Link>
-
+					<div className="editing"> EDITANDO </div>
 				</header>
 
 				<h1> Alcance mais doadores recorrentes! </h1>
@@ -70,7 +67,6 @@ export default() => {
 				<div>
 					<Link to="" > ENVIAR DADOS </Link>
 				</div>
-
 			</div>
 
 			<div className="items">
@@ -86,7 +82,6 @@ export default() => {
 					})
 				}
 			</div>
-
 		</div>
-	);
+	)
 }
