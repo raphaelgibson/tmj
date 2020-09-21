@@ -59,7 +59,7 @@ export default() => {
 
 			</section>
 
-			<Link to="/" > <MdArrowBack /> Voltar para lista de ongs </Link>
+			<Link to="/donation" > <MdArrowBack /> Voltar para lista de ongs </Link>
 
 		</div>
 	);
