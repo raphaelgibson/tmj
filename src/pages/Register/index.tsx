@@ -79,7 +79,7 @@ export default() => {
 					: <></> }
 
                 <button type="button" className="purple-button">
-                    <Link to={checked ? "/ong" : "/ongs"}>cadastrar</Link>
+                    <Link to={checked ? "/ong/change" : "/ongs"}>cadastrar</Link>
                 </button>
 			</form>
 

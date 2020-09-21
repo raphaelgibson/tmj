@@ -36,7 +36,7 @@ export default() => {
 			></textarea>
 
 			<div className="buttonContainer">
-				<Link to="" > GUARDAR ALTERAÇÔES </Link>
+				<Link to="/message" > GUARDAR ALTERAÇÔES </Link>
 			</div>
 
 		</div>
