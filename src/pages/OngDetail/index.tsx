@@ -39,19 +39,19 @@ export default() => {
 
 					<div id="firstChild" >
 						<span> R$ 19.90 <span>/mês</span> </span>
-						<Link to="" > DOAR </Link>
+						<Link to="/donation" > DOAR </Link>
 						<p>Lorem ipsum dolor sit amet, consectetur</p>
 					</div>
 
 					<div>
 						<span> R$ 49.90 <span>/mês</span> </span>
-						<Link to="" > DOAR </Link>
+						<Link to="/donation" > DOAR </Link>
 						<p>Lorem ipsum dolor sit amet, consectetur</p>
 					</div>
 
 					<div id="lastChild" >
 						<span> R$ 99.90 <span>/mês</span> </span>
-						<Link to="" > DOAR </Link>
+						<Link to="/donation" > DOAR </Link>
 						<p>Lorem ipsum dolor sit amet, consectetur</p>
 					</div>
 
@@ -59,7 +59,7 @@ export default() => {
 
 			</section>
 
-			<Link to="/donation" > <MdArrowBack /> Voltar para lista de ongs </Link>
+			<Link to="/ongs" > <MdArrowBack /> Voltar para lista de ongs </Link>
 
 		</div>
 	);
