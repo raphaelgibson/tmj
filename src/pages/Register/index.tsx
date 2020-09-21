@@ -78,7 +78,9 @@ export default() => {
 					</div>
 					: <></> }
 
-				<button> Cadastre-se </button>
+                <button type="button" className="purple-button">
+                    <Link to={checked ? "/ong" : "/ongs"}>cadastrar</Link>
+                </button>
 			</form>
 
 			<span id="login" > Já tem uma conta? <Link to="/login" >Log-in</Link> </span>

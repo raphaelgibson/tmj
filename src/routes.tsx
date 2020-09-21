@@ -9,7 +9,6 @@ import OngChange from './pages/OngChange'
 import Register from './pages/Register/'
 import Login from './pages/Login/'
 import Donation from './pages/Donation/'
-import PostAPI from './pages/PostAPI/'
 import TimeLine from './pages/TimeLine/'
 
 import './index.scss'
@@ -25,7 +24,6 @@ const App = () => {
 				<Route path='/register' component={ Register } />
 				<Route path='/login' component={ Login } />
 				<Route path='/donation' component={ Donation } />
-				<Route path='/postapi' component={ PostAPI } />
 				<Route path='/timeline' component={ TimeLine } />
 				<Route path='*' component={ Homepage } />
 			</Switch>

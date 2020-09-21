@@ -7,7 +7,6 @@ import api from '../../services/api'
 import './styles.scss'
 
 export default() => {
-
     const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault()
 
@@ -15,7 +14,6 @@ export default() => {
         const body = { mensagem: `Obrigado pela sua doação! Agora, para continuar acompanhando o resultado das suas doações, acesse esse link: ${link}.` }
         
         try {
-        
             await api.post('/zenvia/viaWhats', body);
 
             Swal.fire({
@@ -25,7 +23,7 @@ export default() => {
 
         } catch (error) {
             console.log(error)
-            
+
             Swal.fire({
                 icon: 'error',
                 title: 'Falha no servidor. Tente novamente mais tarde.'
@@ -42,6 +40,7 @@ export default() => {
                 <button><MdCreditCard /></button>
                 <button>PayPal</button>
             </section>
+
             <section>
                 <form onSubmit={handleSubmit} className="col-2">
                     <section className="ong">
@@ -107,7 +106,7 @@ export default() => {
                             <input type="text" name="" id=""/>
                         </div>
 
-                        <button type="submit" className="purple-button" title="Clique para doar" style={{marginTop: '1.9em', marginLeft: '0', width: '100%'}}>doar</button>
+                        <button type="submit" className="purple-button" title="Clique para doar">doar</button>
                     </section>
                 </form>
             </section>

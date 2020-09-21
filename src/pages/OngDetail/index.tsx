@@ -20,17 +20,17 @@ export default() => {
 			<section>
 				
 				<div className="ong">
-						<header>
-							<img src={ details.urlImage } alt={ details.name } />
-							<div>
-								<h1>{ details.name }</h1>
-								{ details.points }
-							</div>
-						</header>
-						<p>
-							<span>Breve descrição</span>	
-							{ details.description }
-						</p>
+					<header>
+						<img src={ details.urlImage } alt={ details.name } />
+						<div>
+							<h1>{ details.name }</h1>
+							{ details.points }
+						</div>
+					</header>
+					<p>
+						<span>Breve descrição</span>	
+						{ details.description }
+					</p>
 				</div>
 				
 				<div className="ongValues">

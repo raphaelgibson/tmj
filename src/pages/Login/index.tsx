@@ -50,7 +50,9 @@ export default() => {
 					</div>
 				</div>
 
-				<button> Log in </button>
+				<button type="button" className="purple-button">
+                    <Link to="/ongs">entrar</Link>
+                </button>
 
 			</form>
 
