@@ -11,6 +11,8 @@ import Login from './pages/Login/'
 import Donation from './pages/Donation/'
 import TimeLine from './pages/TimeLine/'
 
+import Message from './pages/Message/'
+
 import './index.scss'
 
 const App = () => {
@@ -24,6 +26,7 @@ const App = () => {
 				<Route path='/register' component={ Register } />
 				<Route path='/login' component={ Login } />
 				<Route path='/donation' component={ Donation } />
+				<Route path='/message' component={ Message } />
 				<Route path='/timeline' component={ TimeLine } />
 				<Route path='*' component={ Homepage } />
 			</Switch>
