@@ -1,5 +1,5 @@
 import React, { FormEvent } from 'react'
-import { MdCreditCard } from 'react-icons/md';
+import { MdCreditCard } from 'react-icons/md'
 import Swal from 'sweetalert2'
 
 import api from '../../services/api'
