@@ -17,6 +17,7 @@
     "react-icons": "^3.11.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
+    "sweetalert2": "^9.10.9",
     "typescript": "~3.7.2"
   },
   "scripts": {
